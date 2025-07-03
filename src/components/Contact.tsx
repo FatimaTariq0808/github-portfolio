@@ -1,39 +1,13 @@
-import React, { useState } from "react";
 import { motion } from "framer-motion";
 import {
   Mail,
-  Phone,
   MapPin,
   Send,
   Github,
   Linkedin,
-  Twitter,
 } from "lucide-react";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
-
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission here
-    console.log("Form submitted:", formData);
-    // Reset form
-    setFormData({ name: "", email: "", subject: "", message: "" });
-  };
 
   const contactInfo = [
     {
@@ -171,7 +145,10 @@ const Contact = () => {
 
                 if (res.ok) {
                   form.reset();
-                  window.location.href = "/thank-you"; 
+                  const baseUrl = import.meta.env.PROD
+                    ? "/github-portfolio"
+                    : "";
+                  window.location.href = `${baseUrl}/#/thank-you`;
                 } else {
                   alert(
                     "There was a problem submitting the form. Please try again."
