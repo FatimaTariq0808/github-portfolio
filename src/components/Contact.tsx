@@ -43,12 +43,6 @@ const Contact = () => {
       link: "mailto:fatimatariq0802@email.com",
     },
     {
-      icon: Phone,
-      title: "Phone",
-      content: "+92 322 4304349",
-      link: "tel:+923224304349",
-    },
-    {
       icon: MapPin,
       title: "Location",
       content: "Lahore, Pakistan",

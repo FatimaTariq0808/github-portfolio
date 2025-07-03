@@ -1,4 +1,6 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React from 'react';
+import { motion } from 'framer-motion';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -28,7 +30,7 @@ function HomePage() {
 
 function App() {
   return (
-    <Router basename="/github-portfolio">
+    <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/thank-you" element={<ThankYou />} />

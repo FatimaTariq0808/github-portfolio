@@ -66,12 +66,6 @@ const Footer = () => {
               >
                 fatimatariq0802@gmail.com
               </a>
-              <a
-                href="tel:+923001234567"
-                className="text-gray-400 hover:text-white transition-colors duration-300 block"
-              >
-                +92 322 4304349
-              </a>
               <span className="text-gray-400 block">
                 Lahore, Pakistan
               </span>
