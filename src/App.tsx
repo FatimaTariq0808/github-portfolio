@@ -1,5 +1,3 @@
-import React from 'react';
-import { motion } from 'framer-motion';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -30,7 +28,7 @@ function HomePage() {
 
 function App() {
   return (
-    <Router>
+    <Router basename="/github-portfolio">
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/thank-you" element={<ThankYou />} />
@@ -38,6 +36,5 @@ function App() {
     </Router>
   );
 }
-
 
 export default App;
