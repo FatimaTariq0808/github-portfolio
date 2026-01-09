@@ -1,12 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 import {
-  ExternalLink,
   Github,
-  Code,
   Smartphone,
   Globe,
-  Database,
   ShieldCheck,
   Briefcase,
 } from "lucide-react";
@@ -16,49 +13,52 @@ const Projects = () => {
     {
       title: "Shufti (Identity Verification)",
       description:
-        "Contributed to identity-verification products by implementing phone and email intelligence features. Developed document expiry monitoring and automated email notifications. Implemented age-verification services using facial recognition and ID data extraction.",
+        "Contributed to identity-verification products by implementing phone and email intelligence features using Laravel[cite: 31, 32]. Developed document expiry monitoring and automated email notifications[cite: 33]. Implemented age-verification services using facial recognition and ID data extraction[cite: 34].",
       image:
         "https://images.pexels.com/photos/927022/pexels-photo-927022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       technologies: ["Laravel", "SendGrid", "Twilio", "Facial Recognition"],
       category: "Professional Project",
       icon: ShieldCheck,
+      github: "https://github.com/FatimaTariq0808",
       features: [
-        "Identity Verification Features",
-        "SendGrid & Twilio Integration",
-        "Document Expiry Monitoring",
-        "Age-Verification Services",
+        "Identity Verification [cite: 31]",
+        "SendGrid & Twilio [cite: 32]",
+        "Expiry Monitoring [cite: 33]",
+        "Age-Verification [cite: 34]",
       ],
     },
     {
       title: "ClickUp (Task Management)",
       description:
-        "Developed backend services for a task and project management platform in Laravel, Nodejs. Used watch streams for communicating between teams. Designed RESTful APIs and database schemas while implementing role-based access control and real-time updates.",
+        "Developed backend services for a task and project management platform using Laravel and Node.js[cite: 36]. Designed RESTful APIs and database schemas while implementing role-based access control and real-time updates[cite: 37, 38].",
       image:
         "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      technologies: ["Backend Development", "RESTful APIs", "Database Design"],
+      technologies: ["Laravel", "Node.js", "RESTful APIs", "Database Design"],
       category: "Professional Project",
       icon: Briefcase,
+      github: "https://github.com/FatimaTariq0808",
       features: [
-        "RESTful API Design",
-        "Database Schema Architecture",
-        "Role-Based Access Control",
-        "Real-Time Updates",
+        "RESTful API Design [cite: 37]",
+        "Schema Architecture [cite: 37]",
+        "Access Control [cite: 38]",
+        "Real-Time Updates [cite: 38]",
       ],
     },
     {
       title: "Shaping Homes",
       description:
-        "Developed a cross-platform mobile application using React Native and built backend services using Node.js and Express.js. Implemented a bidding system for contracters. Integrated modules for personalized home recommendations.",
+        "Developed a cross-platform mobile application using React Native[cite: 40]. Built backend services using Node.js and Express.js, integrating AI modules for personalized home recommendations[cite: 40, 41].",
       image:
         "https://images.pexels.com/photos/8293771/pexels-photo-8293771.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       technologies: ["React Native", "Node.js", "Express.js", "AI"],
       category: "Final Year Project",
       icon: Smartphone,
+      github: "https://github.com/FatimaTariq0808/FYP",
       features: [
-        "Cross-Platform Mobile App",
-        "Node.js Backend",
-        "AI Recommendation Modules",
-        "Home Recommendations",
+        "React Native App [cite: 40]",
+        "Node.js Backend [cite: 40]",
+        "AI AI Modules [cite: 41]",
+        "Home Recommendations [cite: 41]",
       ],
     },
   ];
@@ -78,12 +78,10 @@ const Projects = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-teal-600 mx-auto mb-8"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Professional experience and technical projects showcasing expertise
-            in full-stack development, API design, and mobile applications.
+            A showcase of professional experience and technical expertise in full-stack development[cite: 5].
           </p>
         </motion.div>
 
-        {/* Added grid-stretch to ensure children take full height */}
         <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 items-stretch">
           {projects.map((project, index) => (
             <motion.div
@@ -92,7 +90,6 @@ const Projects = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: index * 0.1 }}
               viewport={{ once: true }}
-              /* Added flex flex-col h-full to make the card a vertical flex container */
               className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group transform hover:-translate-y-2 flex flex-col h-full"
             >
               <div className="relative overflow-hidden shrink-0">
@@ -114,13 +111,21 @@ const Projects = () => {
                 </div>
               </div>
 
-              {/* Added flex-1 and flex-col to push the bottom buttons down */}
               <div className="p-6 flex flex-col flex-1">
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  {project.title}
-                </h3>
-
-                {/* Description - flex-1 ensures this section expands to fill available space */}
+                <div className="flex justify-between items-start mb-3">
+                  <h3 className="text-xl font-bold text-gray-900">
+                    {project.title}
+                  </h3>
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-gray-100 text-gray-700 p-2 rounded-lg hover:bg-gray-200 transition-colors duration-300"
+                  >
+                    <Github size={18} />
+                  </a>
+                </div>
+                
                 <p className="text-gray-600 mb-4 leading-relaxed flex-1">
                   {project.description}
                 </p>
@@ -129,7 +134,6 @@ const Projects = () => {
                   <h4 className="text-sm font-semibold text-gray-900 mb-2">
                     Key Features:
                   </h4>
-                  {/* Fixed min-height for features list to keep them aligned */}
                   <div className="grid grid-cols-2 gap-1 min-h-[60px]">
                     {project.features.map((feature) => (
                       <div
@@ -143,8 +147,7 @@ const Projects = () => {
                   </div>
                 </div>
 
-                {/* Tech Tags - fixed min-height ensures tags don't shift button positions */}
-                <div className="flex flex-wrap gap-2 mb-6 min-h-[70px] content-start">
+                <div className="flex flex-wrap gap-2 mt-auto">
                   {project.technologies.map((tech) => (
                     <span
                       key={tech}
@@ -153,33 +156,6 @@ const Projects = () => {
                       {tech}
                     </span>
                   ))}
-                </div>
-
-                {/* Buttons - will now always be at the bottom */}
-                <div className="flex space-x-3 mt-auto">
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1"
-                  >
-                    <motion.button
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                      className="w-full bg-gradient-to-r from-blue-600 to-teal-600 text-white py-2 px-4 rounded-lg font-medium flex items-center justify-center gap-2 hover:shadow-lg transition-all duration-300"
-                    >
-                      View Project
-                    </motion.button>
-                  </a>
-
-                  <a target="_blank" rel="noopener noreferrer">
-                    <motion.button
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                      className="bg-gray-100 text-gray-700 p-2 rounded-lg hover:bg-gray-200 transition-colors duration-300"
-                    >
-                      <Github size={20} />
-                    </motion.button>
-                  </a>
                 </div>
               </div>
             </motion.div>
@@ -193,17 +169,13 @@ const Projects = () => {
           viewport={{ once: true }}
           className="text-center mt-12"
         >
-          <a
-            href="https://github.com/FatimaTariq0808"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://github.com/FatimaTariq0808" target="_blank" rel="noopener noreferrer">
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="bg-gradient-to-r from-blue-600 to-teal-600 text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300"
             >
-              View All Projects
+              View All Projects on GitHub
             </motion.button>
           </a>
         </motion.div>
