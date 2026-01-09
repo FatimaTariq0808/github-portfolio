@@ -16,7 +16,7 @@ const Projects = () => {
     {
       title: "Shufti (Identity Verification)",
       description:
-        "Contributed to identity-verification products by implementing phone and email intelligence features. Developed document expiry monitoring and automated email notifications[cite: 30, 32, 33]. Implemented age-verification services using facial recognition and ID data extraction[cite: 34].",
+        "Contributed to identity-verification products by implementing phone and email intelligence features. Developed document expiry monitoring and automated email notifications. Implemented age-verification services using facial recognition and ID data extraction.",
       image:
         "https://images.pexels.com/photos/927022/pexels-photo-927022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       technologies: ["Laravel", "SendGrid", "Twilio", "Facial Recognition"],
@@ -33,7 +33,7 @@ const Projects = () => {
     {
       title: "ClickUp (Task Management)",
       description:
-        "Developed backend services for a task and project management platform[cite: 36]. Designed RESTful APIs and database schemas while implementing role-based access control and real-time updates[cite: 37, 38].",
+        "Developed backend services for a task and project management platform. Designed RESTful APIs and database schemas while implementing role-based access control and real-time updates.",
       image:
         "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       technologies: ["Backend Development", "RESTful APIs", "Database Design"],
@@ -50,7 +50,7 @@ const Projects = () => {
     {
       title: "Shaping Homes",
       description:
-        "Developed a cross-platform mobile application using React Native and built backend services using Node.js and Express.js[cite: 39, 40]. Integrated AI modules for personalized home recommendations[cite: 41].",
+        "Developed a cross-platform mobile application using React Native and built backend services using Node.js and Express.js. Integrated AI modules for personalized home recommendations.",
       image:
         "https://images.pexels.com/photos/8293771/pexels-photo-8293771.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       technologies: ["React Native", "Node.js", "Express.js", "AI"],
@@ -64,40 +64,40 @@ const Projects = () => {
         "Home Recommendations [cite: 41]",
       ],
     },
-    {
-      title: "Coin Bounce",
-      description:
-        "A cryptocurrency web application designed for real-time market tracking and blog management. Built with React for the interface and Node.js for data handling, integrating third-party APIs for live values.",
-      image:
-        "https://images.pexels.com/photos/844124/pexels-photo-844124.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      technologies: ["React", "Node.js", "Express.js", "Third-Party APIs"],
-      category: "Web Application",
-      icon: Globe,
-      github: "https://github.com/FatimaTariq0808/Coin-Bounce",
-      features: [
-        "Live Cryptocurrency Data",
-        "Blog Management",
-        "Responsive UI",
-        "Blockchain Integration",
-      ],
-    },
-    {
-      title: "Opay",
-      description:
-        "A functional e-commerce platform focused on secure transactions. Built using React, Node.js, and MongoDB, featuring payment system integration and optimized user experience based on feedback.",
-      image:
-        "https://images.pexels.com/photos/4386431/pexels-photo-4386431.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      technologies: ["React", "Node.js", "Express.js", "MongoDB"],
-      category: "E-Commerce Application",
-      icon: Code,
-      github: "https://github.com/FatimaTariq0808/Opay",
-      features: [
-        "E-commerce Functionality",
-        "Secure Payments",
-        "Transaction Management",
-        "User Feedback Integration",
-      ],
-    },
+    // {
+    //   title: "Coin Bounce",
+    //   description:
+    //     "A cryptocurrency web application designed for real-time market tracking and blog management. Built with React for the interface and Node.js for data handling, integrating third-party APIs for live values.",
+    //   image:
+    //     "https://images.pexels.com/photos/844124/pexels-photo-844124.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    //   technologies: ["React", "Node.js", "Express.js", "Third-Party APIs"],
+    //   category: "Web Application",
+    //   icon: Globe,
+    //   github: "https://github.com/FatimaTariq0808/Coin-Bounce",
+    //   features: [
+    //     "Live Cryptocurrency Data",
+    //     "Blog Management",
+    //     "Responsive UI",
+    //     "Blockchain Integration",
+    //   ],
+    // },
+    // {
+    //   title: "Opay",
+    //   description:
+    //     "A functional e-commerce platform focused on secure transactions. Built using React, Node.js, and MongoDB, featuring payment system integration and optimized user experience based on feedback.",
+    //   image:
+    //     "https://images.pexels.com/photos/4386431/pexels-photo-4386431.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    //   technologies: ["React", "Node.js", "Express.js", "MongoDB"],
+    //   category: "E-Commerce Application",
+    //   icon: Code,
+    //   github: "https://github.com/FatimaTariq0808/Opay",
+    //   features: [
+    //     "E-commerce Functionality",
+    //     "Secure Payments",
+    //     "Transaction Management",
+    //     "User Feedback Integration",
+    //   ],
+    // },
   ];
 
   return (
