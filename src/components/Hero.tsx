@@ -6,7 +6,7 @@ const Hero = () => {
   const handleDownloadResume = () => {
     // Create a download link for the resume
     const link = document.createElement('a');
-    link.href = '/FatimaTariq_CV.pdf';
+    link.href = '/github-portfolio/FatimaTariq_CV.pdf';
     link.download = 'FatimaTariq_CV.pdf';
     link.click();
   };
