@@ -41,5 +41,12 @@
   "main": "eslint.config.js",
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FatimaTariq0808/github-portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/FatimaTariq0808/github-portfolio/issues"
+  }
 }
