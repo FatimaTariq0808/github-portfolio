@@ -1,14 +1,15 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Download, Github, Linkedin, Mail } from 'lucide-react';
+import React from "react";
+import { motion } from "framer-motion";
+import { Download, Github, Linkedin, Mail } from "lucide-react";
 
 const Hero = () => {
   const handleDownloadResume = () => {
-    // Create a download link for the resume
-    const link = document.createElement('a');
-    link.href = '/github-portfolio/FatimaTariq_CV.pdf';
-    link.download = 'FatimaTariq_CV.pdf';
+    const link = document.createElement("a");
+    link.href = "FatimaTariq_CV.pdf"; 
+    link.download = "FatimaTariq_CV.pdf";
+    document.body.appendChild(link); 
     link.click();
+    document.body.removeChild(link); 
   };
 
   return (
@@ -59,8 +60,9 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto mb-12 leading-relaxed"
           >
-            Software Engineer with practical experience in backend development, RESTful API design, and secure application
-            development. Hands-on experience with Laravel, Node.js, relational and NoSQL databases.
+            Software Engineer with practical experience in backend development,
+            RESTful API design, and secure application development. Hands-on
+            experience with Laravel, Node.js, relational and NoSQL databases.
           </motion.p>
 
           <motion.div
@@ -78,9 +80,13 @@ const Hero = () => {
               <Download size={20} />
               Download Resume
             </motion.button>
-            
+
             <motion.button
-              onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() =>
+                document
+                  .querySelector("#contact")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-blue-600 hover:text-white transition-all duration-300"
