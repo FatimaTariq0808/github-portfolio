@@ -13,7 +13,7 @@ const Projects = () => {
     {
       title: "Shufti (Identity Verification)",
       description:
-        "Contributed to identity-verification products by implementing phone and email intelligence features using Laravel[cite: 31, 32]. Developed document expiry monitoring and automated email notifications[cite: 33]. Implemented age-verification services using facial recognition and ID data extraction[cite: 34].",
+        "Contributed to identity-verification products by implementing phone and email intelligence features using Laravel. Developed document expiry monitoring and automated email notifications. Implemented age-verification services using facial recognition and ID data extraction.",
       image:
         "https://images.pexels.com/photos/927022/pexels-photo-927022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       technologies: ["Laravel", "SendGrid", "Twilio", "Facial Recognition"],
@@ -21,16 +21,16 @@ const Projects = () => {
       icon: ShieldCheck,
       github: "https://github.com/FatimaTariq0808",
       features: [
-        "Identity Verification [cite: 31]",
-        "SendGrid & Twilio [cite: 32]",
-        "Expiry Monitoring [cite: 33]",
-        "Age-Verification [cite: 34]",
+        "Identity Verification",
+        "SendGrid & Twilio",
+        "Expiry Monitoring",
+        "Age-Verification",
       ],
     },
     {
       title: "ClickUp (Task Management)",
       description:
-        "Developed backend services for a task and project management platform using Laravel and Node.js[cite: 36]. Designed RESTful APIs and database schemas while implementing role-based access control and real-time updates[cite: 37, 38].",
+        "Developed backend services for a task and project management platform using Laravel and Node.js. Designed RESTful APIs and database schemas while implementing role-based access control and real-time updates.",
       image:
         "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       technologies: ["Laravel", "Node.js", "RESTful APIs", "Database Design"],
@@ -38,16 +38,16 @@ const Projects = () => {
       icon: Briefcase,
       github: "https://github.com/FatimaTariq0808",
       features: [
-        "RESTful API Design [cite: 37]",
-        "Schema Architecture [cite: 37]",
-        "Access Control [cite: 38]",
-        "Real-Time Updates [cite: 38]",
+        "RESTful API Design",
+        "Schema Architecture",
+        "Access Control",
+        "Real-Time Updates",
       ],
     },
     {
       title: "Shaping Homes",
       description:
-        "Developed a cross-platform mobile application using React Native[cite: 40]. Built backend services using Node.js and Express.js, integrating AI modules for personalized home recommendations[cite: 40, 41].",
+        "Developed a cross-platform mobile application using React Native. Built backend services using Node.js and Express.js, integrating AI modules for personalized home recommendations.",
       image:
         "https://images.pexels.com/photos/8293771/pexels-photo-8293771.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       technologies: ["React Native", "Node.js", "Express.js", "AI"],
@@ -55,10 +55,10 @@ const Projects = () => {
       icon: Smartphone,
       github: "https://github.com/FatimaTariq0808/FYP",
       features: [
-        "React Native App [cite: 40]",
-        "Node.js Backend [cite: 40]",
-        "AI AI Modules [cite: 41]",
-        "Home Recommendations [cite: 41]",
+        "React Native App",
+        "Node.js Backend",
+        "AI AI Modules",
+        "Home Recommendations",
       ],
     },
   ];
@@ -78,7 +78,7 @@ const Projects = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-teal-600 mx-auto mb-8"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            A showcase of professional experience and technical expertise in full-stack development[cite: 5].
+            A showcase of professional experience and technical expertise in full-stack development.
           </p>
         </motion.div>
 
