@@ -7,32 +7,67 @@ import {
   Smartphone,
   Globe,
   Database,
-  Users,
+  ShieldCheck,
+  Briefcase,
 } from "lucide-react";
 
 const Projects = () => {
   const projects = [
     {
+      title: "Shufti (Identity Verification)",
+      description:
+        "Contributed to identity-verification products by implementing phone and email intelligence features. Developed document expiry monitoring and automated email notifications[cite: 30, 32, 33]. Implemented age-verification services using facial recognition and ID data extraction[cite: 34].",
+      image:
+        "https://images.pexels.com/photos/927022/pexels-photo-927022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      technologies: ["Laravel", "SendGrid", "Twilio", "Facial Recognition"],
+      category: "Professional Project",
+      icon: ShieldCheck,
+      github: "https://github.com/FatimaTariq0808",
+      features: [
+        "Identity Verification Features [cite: 31]",
+        "SendGrid & Twilio Integration [cite: 32]",
+        "Document Expiry Monitoring [cite: 33]",
+        "Age-Verification Services [cite: 34]",
+      ],
+    },
+    {
+      title: "ClickUp (Task Management)",
+      description:
+        "Developed backend services for a task and project management platform[cite: 36]. Designed RESTful APIs and database schemas while implementing role-based access control and real-time updates[cite: 37, 38].",
+      image:
+        "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      technologies: ["Backend Development", "RESTful APIs", "Database Design"],
+      category: "Professional Project",
+      icon: Briefcase,
+      github: "https://github.com/FatimaTariq0808",
+      features: [
+        "RESTful API Design [cite: 37]",
+        "Database Schema Architecture [cite: 37]",
+        "Role-Based Access Control [cite: 38]",
+        "Real-Time Updates [cite: 38]",
+      ],
+    },
+    {
       title: "Shaping Homes",
       description:
-        "A smart mobile application designed to simplify the property search and real estate management experience. Built using React Native and powered by a Node.js and Express.js backend, the app leverages AI modules to recommend property prices. It supports dynamic user data through MongoDB and integrates intelligent features to streamline buying, selling, and bidding processes.",
+        "Developed a cross-platform mobile application using React Native and built backend services using Node.js and Express.js[cite: 39, 40]. Integrated AI modules for personalized home recommendations[cite: 41].",
       image:
         "https://images.pexels.com/photos/8293771/pexels-photo-8293771.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      technologies: ["React Native", "Node.js", "Express.js", "MongoDB", "AI"],
-      category: "Mobile Application",
+      technologies: ["React Native", "Node.js", "Express.js", "AI"],
+      category: "Final Year Project",
       icon: Smartphone,
       github: "https://github.com/FatimaTariq0808/FYP",
       features: [
-        "Smart Property Search",
-        "Real-Time Bidding System",
-        "User Authentication & Profiles",
-        "AI-Based Price Suggestions",
+        "Cross-Platform Mobile App [cite: 40]",
+        "Node.js Backend [cite: 40]",
+        "AI Recommendation Modules [cite: 41]",
+        "Home Recommendations [cite: 41]",
       ],
     },
     {
       title: "Coin Bounce",
       description:
-        "A cryptocurrency web application designed for real-time market tracking and blog management. Built with an interface using React, the platform provides intuitive navigation and seamless user engagement. The backend is powered by Node.js and Express.js for efficient data handling, while third-party APIs are integrated to fetch live cryptocurrency and blockchain currency values.",
+        "A cryptocurrency web application designed for real-time market tracking and blog management. Built with React for the interface and Node.js for data handling, integrating third-party APIs for live values.",
       image:
         "https://images.pexels.com/photos/844124/pexels-photo-844124.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       technologies: ["React", "Node.js", "Express.js", "Third-Party APIs"],
@@ -43,13 +78,13 @@ const Projects = () => {
         "Live Cryptocurrency Data",
         "Blog Management",
         "Responsive UI",
-        "Blockchain Price Integration",
+        "Blockchain Integration",
       ],
     },
     {
       title: "Opay",
       description:
-        "A fully functional e-commerce platform focused on secure transactions and user-driven enhancements. The frontend was developed using React, while the backend was powered by Node.js and Express.js for seamless data processing. Integrated payment systems ensure secure transactions, and improvements were made by incorporating user feedback and optimizing the overall experience.",
+        "A functional e-commerce platform focused on secure transactions. Built using React, Node.js, and MongoDB, featuring payment system integration and optimized user experience based on feedback.",
       image:
         "https://images.pexels.com/photos/4386431/pexels-photo-4386431.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       technologies: ["React", "Node.js", "Express.js", "MongoDB"],
@@ -58,43 +93,9 @@ const Projects = () => {
       github: "https://github.com/FatimaTariq0808/Opay",
       features: [
         "E-commerce Functionality",
-        "Comments",
+        "Secure Payments",
         "Transaction Management",
-        "Secure Payment Integration",
-      ],
-    },
-    {
-      title: "Library Management System",
-      description:
-        "A library management solution designed to streamline book tracking, and library operations. The frontend was developed using ASP.NET, CSS, and HTML to ensure seamless functionality and an intuitive interface. The system supports a comprehensive book catalog, member management, and reporting, making it ideal for academic libraries.",
-      image:
-        "https://images.pexels.com/photos/256559/pexels-photo-256559.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      technologies: ["ASP.NET", "HTML", "CSS", "MySQL"],
-      category: "Web Application",
-      icon: Database,
-      github: "https://github.com/FatimaTariq0808/Library-Management-System",
-      features: [
-        "Book Catalog Management",
-        "Lending & Return System",
-        "Member Registration",
-        "Reports Analytics",
-      ],
-    },
-    {
-      title: "Candy Crush",
-      description:
-        "A console-based version of the classic Candy Crush game, developed using C++. Features include interactive gameplay, dynamic logic handling, and a smooth user experience built entirely in a text-based environment. Core mechanics like match detection, cascading effects, and score tracking were implemented with efficient C++ logic",
-      image:
-        "https://sm.ign.com/t/ign_za/articlepage/l/london-orchestra-plays-candy-crush-soda-saga-theme/london-orchestra-plays-candy-crush-soda-saga-theme_c9ag.2560.jpg",
-      technologies: ["C++", "OOP", "Data Structures"],
-      category: "Game Development",
-      icon: Users,
-      github: "https://github.com/FatimaTariq0808/Candy-Crush",
-      features: [
-        "Match-3 Logic",
-        "Interactive Gameplay",
-        "Dynamic Scoring System",
-        "Level-Based Progression",
+        "User Feedback Integration",
       ],
     },
   ];
@@ -114,9 +115,8 @@ const Projects = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-teal-600 mx-auto mb-8"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            A showcase of my recent work, demonstrating expertise across various
-            technologies and domains from web applications to mobile
-            development.
+            Professional experience and technical projects showcasing expertise 
+            in full-stack development, API design, and mobile applications.
           </p>
         </motion.div>
 
@@ -186,7 +186,6 @@ const Projects = () => {
                 </div>
 
                 <div className="flex space-x-3">
-                  {/* Full-width "View Project" button */}
                   <a
                     href={project.github}
                     target="_blank"
@@ -202,7 +201,6 @@ const Projects = () => {
                     </motion.button>
                   </a>
 
-                  {/* GitHub icon button */}
                   <a
                     href={project.github}
                     target="_blank"
@@ -229,13 +227,15 @@ const Projects = () => {
           viewport={{ once: true }}
           className="text-center mt-12"
         >
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="bg-gradient-to-r from-blue-600 to-teal-600 text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300"
-          >
-            View All Projects
-          </motion.button>
+          <a href="https://github.com/FatimaTariq0808" target="_blank" rel="noopener noreferrer">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="bg-gradient-to-r from-blue-600 to-teal-600 text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300"
+            >
+              View All Projects
+            </motion.button>
+          </a>
         </motion.div>
       </div>
     </section>
