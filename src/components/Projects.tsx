@@ -22,46 +22,46 @@ const Projects = () => {
       technologies: ["Laravel", "SendGrid", "Twilio", "Facial Recognition"],
       category: "Professional Project",
       icon: ShieldCheck,
-      github: "https://github.com/FatimaTariq0808",
+      // github: "https://github.com/FatimaTariq0808",
       features: [
-        "Identity Verification Features [cite: 31]",
-        "SendGrid & Twilio Integration [cite: 32]",
-        "Document Expiry Monitoring [cite: 33]",
-        "Age-Verification Services [cite: 34]",
+        "Identity Verification Features",
+        "SendGrid & Twilio Integration",
+        "Document Expiry Monitoring",
+        "Age-Verification Services",
       ],
     },
     {
       title: "ClickUp (Task Management)",
       description:
-        "Developed backend services for a task and project management platform. Designed RESTful APIs and database schemas while implementing role-based access control and real-time updates.",
+        "Developed backend services for a task and project management platform in Laravel, Nodejs. Used watch streams for communicating between teams.  Designed RESTful APIs and database schemas while implementing role-based access control and real-time updates.",
       image:
         "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       technologies: ["Backend Development", "RESTful APIs", "Database Design"],
       category: "Professional Project",
       icon: Briefcase,
-      github: "https://github.com/FatimaTariq0808",
+      // github: "https://github.com/FatimaTariq0808",
       features: [
-        "RESTful API Design [cite: 37]",
-        "Database Schema Architecture [cite: 37]",
-        "Role-Based Access Control [cite: 38]",
-        "Real-Time Updates [cite: 38]",
+        "RESTful API Design",
+        "Database Schema Architecture",
+        "Role-Based Access Control",
+        "Real-Time Updates",
       ],
     },
     {
       title: "Shaping Homes",
       description:
-        "Developed a cross-platform mobile application using React Native and built backend services using Node.js and Express.js. Integrated AI modules for personalized home recommendations.",
+        "Developed a cross-platform mobile application using React Native and built backend services using Node.js and Express.js. Implemented a bidding system for contracters. Integrated modules for personalized home recommendations.",
       image:
         "https://images.pexels.com/photos/8293771/pexels-photo-8293771.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       technologies: ["React Native", "Node.js", "Express.js", "AI"],
       category: "Final Year Project",
       icon: Smartphone,
-      github: "https://github.com/FatimaTariq0808/FYP",
+      // github: "https://github.com/FatimaTariq0808/FYP",
       features: [
-        "Cross-Platform Mobile App [cite: 40]",
-        "Node.js Backend [cite: 40]",
-        "AI Recommendation Modules [cite: 41]",
-        "Home Recommendations [cite: 41]",
+        "Cross-Platform Mobile App",
+        "Node.js Backend",
+        "AI Recommendation Modules",
+        "Home Recommendations",
       ],
     },
     // {
@@ -187,7 +187,7 @@ const Projects = () => {
 
                 <div className="flex space-x-3">
                   <a
-                    href={project.github}
+                    // href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex-1"
@@ -202,7 +202,7 @@ const Projects = () => {
                   </a>
 
                   <a
-                    href={project.github}
+                    // href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
