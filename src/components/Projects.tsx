@@ -16,7 +16,7 @@ const Projects = () => {
         "Contributed to identity-verification products by implementing phone and email intelligence features using Laravel. Developed document expiry monitoring and automated email notifications. Implemented age-verification services using facial recognition and ID data extraction.",
       image:
         "https://images.pexels.com/photos/927022/pexels-photo-927022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      technologies: ["Laravel", "SendGrid", "Twilio", "Facial Recognition"],
+      technologies: ["Laravel", "SendGrid", "Twilio", "Python"],
       category: "Professional Project",
       icon: ShieldCheck,
       github: "https://github.com/FatimaTariq0808",
@@ -50,7 +50,7 @@ const Projects = () => {
         "Developed a cross-platform mobile application using React Native. Built backend services using Node.js and Express.js, integrating AI modules for personalized home recommendations.",
       image:
         "https://images.pexels.com/photos/8293771/pexels-photo-8293771.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      technologies: ["React Native", "Node.js", "Express.js", "AI"],
+      technologies: ["React Native", "Node.js", "Express.js", "MongoDB", "APIs"],
       category: "Final Year Project",
       icon: Smartphone,
       github: "https://github.com/FatimaTariq0808/FYP",
