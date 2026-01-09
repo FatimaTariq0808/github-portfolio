@@ -22,7 +22,6 @@ const Projects = () => {
       technologies: ["Laravel", "SendGrid", "Twilio", "Facial Recognition"],
       category: "Professional Project",
       icon: ShieldCheck,
-      // github: "https://github.com/FatimaTariq0808",
       features: [
         "Identity Verification Features",
         "SendGrid & Twilio Integration",
@@ -33,13 +32,12 @@ const Projects = () => {
     {
       title: "ClickUp (Task Management)",
       description:
-        "Developed backend services for a task and project management platform in Laravel, Nodejs. Used watch streams for communicating between teams.  Designed RESTful APIs and database schemas while implementing role-based access control and real-time updates.",
+        "Developed backend services for a task and project management platform in Laravel, Nodejs. Used watch streams for communicating between teams. Designed RESTful APIs and database schemas while implementing role-based access control and real-time updates.",
       image:
         "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       technologies: ["Backend Development", "RESTful APIs", "Database Design"],
       category: "Professional Project",
       icon: Briefcase,
-      // github: "https://github.com/FatimaTariq0808",
       features: [
         "RESTful API Design",
         "Database Schema Architecture",
@@ -56,7 +54,6 @@ const Projects = () => {
       technologies: ["React Native", "Node.js", "Express.js", "AI"],
       category: "Final Year Project",
       icon: Smartphone,
-      // github: "https://github.com/FatimaTariq0808/FYP",
       features: [
         "Cross-Platform Mobile App",
         "Node.js Backend",
@@ -64,40 +61,6 @@ const Projects = () => {
         "Home Recommendations",
       ],
     },
-    // {
-    //   title: "Coin Bounce",
-    //   description:
-    //     "A cryptocurrency web application designed for real-time market tracking and blog management. Built with React for the interface and Node.js for data handling, integrating third-party APIs for live values.",
-    //   image:
-    //     "https://images.pexels.com/photos/844124/pexels-photo-844124.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    //   technologies: ["React", "Node.js", "Express.js", "Third-Party APIs"],
-    //   category: "Web Application",
-    //   icon: Globe,
-    //   github: "https://github.com/FatimaTariq0808/Coin-Bounce",
-    //   features: [
-    //     "Live Cryptocurrency Data",
-    //     "Blog Management",
-    //     "Responsive UI",
-    //     "Blockchain Integration",
-    //   ],
-    // },
-    // {
-    //   title: "Opay",
-    //   description:
-    //     "A functional e-commerce platform focused on secure transactions. Built using React, Node.js, and MongoDB, featuring payment system integration and optimized user experience based on feedback.",
-    //   image:
-    //     "https://images.pexels.com/photos/4386431/pexels-photo-4386431.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    //   technologies: ["React", "Node.js", "Express.js", "MongoDB"],
-    //   category: "E-Commerce Application",
-    //   icon: Code,
-    //   github: "https://github.com/FatimaTariq0808/Opay",
-    //   features: [
-    //     "E-commerce Functionality",
-    //     "Secure Payments",
-    //     "Transaction Management",
-    //     "User Feedback Integration",
-    //   ],
-    // },
   ];
 
   return (
@@ -115,12 +78,13 @@ const Projects = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-teal-600 mx-auto mb-8"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Professional experience and technical projects showcasing expertise 
+            Professional experience and technical projects showcasing expertise
             in full-stack development, API design, and mobile applications.
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+        {/* Added grid-stretch to ensure children take full height */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 items-stretch">
           {projects.map((project, index) => (
             <motion.div
               key={project.title}
@@ -128,9 +92,10 @@ const Projects = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group transform hover:-translate-y-2"
+              /* Added flex flex-col h-full to make the card a vertical flex container */
+              className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group transform hover:-translate-y-2 flex flex-col h-full"
             >
-              <div className="relative overflow-hidden">
+              <div className="relative overflow-hidden shrink-0">
                 <img
                   src={project.image}
                   alt={project.title}
@@ -149,11 +114,14 @@ const Projects = () => {
                 </div>
               </div>
 
-              <div className="p-6">
+              {/* Added flex-1 and flex-col to push the bottom buttons down */}
+              <div className="p-6 flex flex-col flex-1">
                 <h3 className="text-xl font-bold text-gray-900 mb-3">
                   {project.title}
                 </h3>
-                <p className="text-gray-600 mb-4 leading-relaxed">
+
+                {/* Description - flex-1 ensures this section expands to fill available space */}
+                <p className="text-gray-600 mb-4 leading-relaxed flex-1">
                   {project.description}
                 </p>
 
@@ -161,20 +129,22 @@ const Projects = () => {
                   <h4 className="text-sm font-semibold text-gray-900 mb-2">
                     Key Features:
                   </h4>
-                  <div className="grid grid-cols-2 gap-1">
+                  {/* Fixed min-height for features list to keep them aligned */}
+                  <div className="grid grid-cols-2 gap-1 min-h-[60px]">
                     {project.features.map((feature) => (
                       <div
                         key={feature}
                         className="text-xs text-gray-600 flex items-center"
                       >
-                        <div className="w-1 h-1 bg-blue-500 rounded-full mr-2"></div>
+                        <div className="w-1 h-1 bg-blue-500 rounded-full mr-2 shrink-0"></div>
                         {feature}
                       </div>
                     ))}
                   </div>
                 </div>
 
-                <div className="flex flex-wrap gap-2 mb-6">
+                {/* Tech Tags - fixed min-height ensures tags don't shift button positions */}
+                <div className="flex flex-wrap gap-2 mb-6 min-h-[70px] content-start">
                   {project.technologies.map((tech) => (
                     <span
                       key={tech}
@@ -185,9 +155,9 @@ const Projects = () => {
                   ))}
                 </div>
 
-                <div className="flex space-x-3">
+                {/* Buttons - will now always be at the bottom */}
+                <div className="flex space-x-3 mt-auto">
                   <a
-                    // href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex-1"
@@ -201,11 +171,7 @@ const Projects = () => {
                     </motion.button>
                   </a>
 
-                  <a
-                    // href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <a target="_blank" rel="noopener noreferrer">
                     <motion.button
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
@@ -227,7 +193,11 @@ const Projects = () => {
           viewport={{ once: true }}
           className="text-center mt-12"
         >
-          <a href="https://github.com/FatimaTariq0808" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://github.com/FatimaTariq0808"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
