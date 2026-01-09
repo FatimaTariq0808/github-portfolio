@@ -67,7 +67,7 @@ const Footer = () => {
                 fatimatariq0802@gmail.com
               </a>
               <span className="text-gray-400 block">
-                Lahore, Pakistan
+                Köln, Germany
               </span>
             </div>
           </motion.div>

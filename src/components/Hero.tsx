@@ -6,8 +6,8 @@ const Hero = () => {
   const handleDownloadResume = () => {
     // Create a download link for the resume
     const link = document.createElement('a');
-    link.href = '/Fatima Tariq_Resume.pdf';
-    link.download = 'Fatima Tariq_Resume.pdf';
+    link.href = '/FatimaTariq_CV.pdf';
+    link.download = 'FatimaTariq_CV.pdf';
     link.click();
   };
 
@@ -59,8 +59,8 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto mb-12 leading-relaxed"
           >
-            Motivated Computer Scientist with a passion for learning and development, 
-            skilled in collaborative environments, and eager to contribute to innovative teams.
+            Software Engineer with practical experience in backend development, RESTful API design, and secure application
+            development. Hands-on experience with Laravel, Node.js, relational and NoSQL databases.
           </motion.p>
 
           <motion.div

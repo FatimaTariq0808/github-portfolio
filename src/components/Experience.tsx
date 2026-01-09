@@ -7,7 +7,7 @@ const Experience = () => {
     {
       company: 'Programmers Force',
       position: 'Associate Software Engineer',
-      period: 'April 2025 - Present',
+      period: 'April 2025 - October 2025',
       location: 'Lahore, Pakistan',
       type: 'Full-time',
       description: 'Working on backend development using Laravel (PHP) and Node.js. Responsible for building and maintaining RESTful APIs, managing relational and non-relational databases, and deploying services in containerized environments.',

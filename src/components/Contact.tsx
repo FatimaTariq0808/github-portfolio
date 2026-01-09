@@ -19,7 +19,7 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Location",
-      content: "Lahore, Pakistan",
+      content: "Köln, Germany",
       link: "#",
     },
   ];
